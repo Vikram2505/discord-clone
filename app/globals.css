@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, :root{
+html,
+body,
+:root {
   height: 100%;
 }
  
@@ -70,3 +72,11 @@ html, body, :root{
   }
 }
  
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
